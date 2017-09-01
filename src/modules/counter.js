@@ -21,7 +21,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         count: state.count + 1,
-        isIncrementing: !state.isIncrementing
+        isIncrementing: false
       };
 
     case DECREMENT_REQUESTED:
@@ -34,7 +34,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         count: state.count - 1,
-        isDecrementing: !state.isDecrementing
+        isDecrementing: false
       };
 
     default:
